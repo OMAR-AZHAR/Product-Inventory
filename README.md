@@ -46,7 +46,10 @@ This **Product Inventory Dashboard** is built with **Next.js**, **Tailwind CSS**
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   1. git clone <https://github.com/OMAR-AZHAR/Product-Inventory>
+   2. Run yarn
+   3. yarn dev
+   
 
 ### Project Tree
 
