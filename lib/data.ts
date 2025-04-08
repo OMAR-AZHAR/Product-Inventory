@@ -1,0 +1,353 @@
+export interface Product {
+  id: string;
+  name: string;
+  category: string;
+  price: number;
+  stockLevel: number;
+  status: string;
+  addedDate: string;
+  description: string;
+  imageUrl: string;
+  metadata: {
+    brand: string;
+    warranty: string;
+    color: string;
+  };
+}
+
+export const products: Product[] = [
+  {
+    id: "PROD-001",
+    name: "Wireless Earbuds Pro",
+    category: "Electronics",
+    price: 129.99,
+    stockLevel: 45,
+    status: "In Stock",
+    addedDate: "2023-09-15",
+    description: "Premium wireless earbuds with active noise cancellation and 24hr battery life.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "SoundWave",
+      warranty: "2 years",
+      color: "Matte Black",
+    },
+  },
+  {
+    id: "PROD-002",
+    name: "Ultra HD Smart TV 55\"",
+    category: "Electronics",
+    price: 899.99,
+    stockLevel: 12,
+    status: "In Stock",
+    addedDate: "2023-10-05",
+    description: "4K HDR Smart TV with built-in streaming apps and voice control.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "VisionPlus",
+      warranty: "3 years",
+      color: "Silver",
+    },
+  },
+  {
+    id: "PROD-003",
+    name: "Ergonomic Office Chair",
+    category: "Furniture",
+    price: 249.99,
+    stockLevel: 7,
+    status: "Low Stock",
+    addedDate: "2023-08-22",
+    description: "Adjustable lumbar support with breathable mesh back.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "ComfortWorks",
+      warranty: "5 years",
+      color: "Black",
+    },
+  },
+  {
+    id: "PROD-004",
+    name: "Stainless Steel Water Bottle",
+    category: "Kitchen",
+    price: 24.95,
+    stockLevel: 89,
+    status: "In Stock",
+    addedDate: "2023-11-10",
+    description: "Insulated 32oz bottle keeps drinks cold for 24 hours or hot for 12.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "HydroFlask",
+      warranty: "Lifetime",
+      color: "Ocean Blue",
+    },
+  },
+  {
+    id: "PROD-005",
+    name: "Yoga Mat",
+    category: "Fitness",
+    price: 39.99,
+    stockLevel: 34,
+    status: "In Stock",
+    addedDate: "2023-07-18",
+    description: "Non-slip eco-friendly mat with carrying strap.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "ZenFlex",
+      warranty: "1 year",
+      color: "Lavender",
+    },
+  },
+  {
+    id: "PROD-006",
+    name: "Blender Pro 2000",
+    category: "Kitchen",
+    price: 129.99,
+    stockLevel: 0,
+    status: "Out of Stock",
+    addedDate: "2023-09-30",
+    description: "High-powered blender with 8 preset programs.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "BlendMaster",
+      warranty: "3 years",
+      color: "Stainless Steel",
+    },
+  },
+  {
+    id: "PROD-007",
+    name: "Wireless Charging Pad",
+    category: "Electronics",
+    price: 29.99,
+    stockLevel: 62,
+    status: "In Stock",
+    addedDate: "2023-12-05",
+    description: "15W fast charging compatible with Qi-enabled devices.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "PowerUp",
+      warranty: "1 year",
+      color: "White",
+    },
+  },
+  {
+    id: "PROD-008",
+    name: "Leather Wallet",
+    category: "Accessories",
+    price: 49.95,
+    stockLevel: 23,
+    status: "In Stock",
+    addedDate: "2023-10-15",
+    description: "Genuine leather bifold wallet with RFID protection.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "UrbanLeather",
+      warranty: "2 years",
+      color: "Brown",
+    },
+  },
+  {
+    id: "PROD-009",
+    name: "Air Fryer XL",
+    category: "Kitchen",
+    price: 119.99,
+    stockLevel: 15,
+    status: "In Stock",
+    addedDate: "2023-11-25",
+    description: "5.8 quart capacity with digital touch controls.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "CrispChef",
+      warranty: "2 years",
+      color: "Black",
+    },
+  },
+  {
+    id: "PROD-010",
+    name: "Fitness Tracker",
+    category: "Electronics",
+    price: 79.99,
+    stockLevel: 3,
+    status: "Low Stock",
+    addedDate: "2023-12-10",
+    description: "Tracks heart rate, sleep, and has 7-day battery life.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "FitTech",
+      warranty: "1 year",
+      color: "Midnight Black",
+    },
+  },
+  {
+    id: "PROD-011",
+    name: "Desk Lamp",
+    category: "Home",
+    price: 45.50,
+    stockLevel: 28,
+    status: "In Stock",
+    addedDate: "2023-08-05",
+    description: "Adjustable LED lamp with 5 brightness levels.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "LumiTech",
+      warranty: "2 years",
+      color: "White",
+    },
+  },
+  {
+    id: "PROD-012",
+    name: "Backpack",
+    category: "Accessories",
+    price: 89.99,
+    stockLevel: 19,
+    status: "In Stock",
+    addedDate: "2023-09-12",
+    description: "Water-resistant backpack with laptop compartment.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "TrekRight",
+      warranty: "3 years",
+      color: "Navy Blue",
+    },
+  },
+  {
+    id: "PROD-013",
+    name: "Coffee Maker",
+    category: "Kitchen",
+    price: 59.99,
+    stockLevel: 11,
+    status: "In Stock",
+    addedDate: "2023-10-18",
+    description: "12-cup programmable coffee maker with thermal carafe.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "BrewMaster",
+      warranty: "2 years",
+      color: "Stainless Steel",
+    },
+  },
+  {
+    id: "PROD-014",
+    name: "Resistance Bands Set",
+    category: "Fitness",
+    price: 34.99,
+    stockLevel: 42,
+    status: "In Stock",
+    addedDate: "2023-07-22",
+    description: "5-band set with handles and door anchor.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "FlexFit",
+      warranty: "1 year",
+      color: "Multi-color",
+    },
+  },
+  {
+    id: "PROD-015",
+    name: "Smart Watch",
+    category: "Electronics",
+    price: 199.99,
+    stockLevel: 6,
+    status: "Low Stock",
+    addedDate: "2023-12-01",
+    description: "Health monitoring with GPS and LTE connectivity.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "TechWear",
+      warranty: "2 years",
+      color: "Graphite",
+    },
+  },
+  {
+    id: "PROD-016",
+    name: "Throw Blanket",
+    category: "Home",
+    price: 39.95,
+    stockLevel: 57,
+    status: "In Stock",
+    addedDate: "2023-11-15",
+    description: "Super soft plush blanket, machine washable.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "CozyHome",
+      warranty: "None",
+      color: "Charcoal Grey",
+    },
+  },
+  {
+    id: "PROD-017",
+    name: "Noise Cancelling Headphones",
+    category: "Electronics",
+    price: 349.99,
+    stockLevel: 9,
+    status: "In Stock",
+    addedDate: "2023-10-30",
+    description: "Premium over-ear headphones with 30hr battery life.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "AudioPro",
+      warranty: "3 years",
+      color: "Silver",
+    },
+  },
+  {
+    id: "PROD-018",
+    name: "Electric Toothbrush",
+    category: "Health",
+    price: 89.99,
+    stockLevel: 31,
+    status: "In Stock",
+    addedDate: "2023-09-05",
+    description: "Sonic technology with 4 brush heads included.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "OralClean",
+      warranty: "2 years",
+      color: "White",
+    },
+  },
+  {
+    id: "PROD-019",
+    name: "Portable Speaker",
+    category: "Electronics",
+    price: 129.99,
+    stockLevel: 14,
+    status: "In Stock",
+    addedDate: "2023-08-15",
+    description: "Waterproof Bluetooth speaker with 20hr playtime.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "SoundBurst",
+      warranty: "1 year",
+      color: "Red",
+    },
+  },
+  {
+    id: "PROD-020",
+    name: "Gaming Mouse",
+    category: "Electronics",
+    price: 59.99,
+    stockLevel: 22,
+    status: "In Stock",
+    addedDate: "2023-11-20",
+    description: "Programmable buttons with RGB lighting.",
+    imageUrl: "/placeholder.png",
+    metadata: {
+      brand: "GameGear",
+      warranty: "2 years",
+      color: "Black",
+    },
+  }
+];
+
+export const categories = [
+  "Electronics",
+  "Clothing",
+  "Home & Kitchen",
+  "Beauty",
+  "Sports",
+];
+
+export function getStatus(stockLevel: number): string {
+  if (stockLevel == 0) return "Out of Stock";
+  if (stockLevel < 10) return "Low Stock";
+  return "In Stock";
+}
